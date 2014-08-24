@@ -1,9 +1,12 @@
-"toggle highlight search
+" toggle highlight search
 nmap <leader>h :set hls!<CR>
 
-"4 spaces in JS
+" 4 spaces in JS
 autocmd BufRead,BufNewFile *.js set tabstop=4
 autocmd BufRead,BufNewFile *.js set shiftwidth=4
 
 nnoremap <leader>db :set background=dark<CR>
 nnoremap <leader>lb :set background=light<CR>
+
+set background=dark
+colorscheme solarized
