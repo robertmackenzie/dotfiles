@@ -1,0 +1,8 @@
+#!/bin/sh
+
+fancy_echo "Installing cask applications"
+  if [[ -f ~/.laptop.casks.local ]]; then
+    brew tap caskroom/cask
+    brew install brew-cask
+    source ~/.laptop.casks.local
+  fi
