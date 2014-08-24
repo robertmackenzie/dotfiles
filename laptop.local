@@ -19,3 +19,9 @@ ln -s $HOME/Dropbox/config/iterm2/com.googlecode.iterm2.plist $HOME/.iterm2/com.
 
 fancy_echo "Installing Scala"
 brew install scala
+
+fancy_echo "Installing sbt"
+brew install sbt
+
+fancy_echo "Installing activator"
+brew install typesafe-activator
