@@ -9,3 +9,6 @@ fancy_echo "Installing cask applications"
 
 fancy_echo "Installing oh-my-zsh"
 git clone git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
+
+fancy_echo "Installing oh-my-zsh Rob theme"
+curl https://dl.dropboxusercontent.com/u/65909882/rob.zsh-theme > $HOME/.oh-my-zsh/themes/rob.zsh-theme
