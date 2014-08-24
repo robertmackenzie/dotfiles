@@ -8,5 +8,7 @@ autocmd BufRead,BufNewFile *.js set shiftwidth=4
 nnoremap <leader>db :set background=dark<CR>
 nnoremap <leader>lb :set background=light<CR>
 
+nnoremap <leader>k :NERDTreeToggle<CR>
+
 set background=dark
 colorscheme solarized
