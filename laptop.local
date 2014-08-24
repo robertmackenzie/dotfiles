@@ -16,3 +16,6 @@ ln -s $HOME/Dropbox/config/oh-my-zsh/rob.zsh-theme $HOME/.oh-my-zsh/themes/rob.z
 fancy_echo "Installing iterm2 settings"
 mkdir $HOME/.iterm2
 ln -s $HOME/Dropbox/config/iterm2/com.googlecode.iterm2.plist $HOME/.iterm2/com.googlecode.iterm2.plist
+
+fancy_echo "Installing Scala"
+brew install scala
