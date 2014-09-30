@@ -51,8 +51,14 @@ else
   fancy_echo "activator already installed. Skipping..."
 fi
 
+if ! command -v 'mongod' >/dev/null; then
+  fancy_echo "Installing mongodb"
+  brew install mongodb
+else
+  fancy_echo "mogodb already installed. Skipping..."
+fi
 
-fancy_echo "Installing mongodb"
-brew install mongodb
+fancy_echo "Starting mongodb..."
+  brew_launchctl_restart mongodb
 
-fancy_echo "Happy days. Job done. Please check the log for any failures"
+fancy_echo "Happy days. Job done. Please check the log for any failures."
