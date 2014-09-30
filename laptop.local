@@ -11,21 +11,45 @@ if [[ -f ~/.laptop.casks.local ]]; then
   source ~/.laptop.casks.local
 fi
 
-fancy_echo "Installing oh-my-zsh"
-git clone git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
+if ! [[ -d $HOME/.oh-my-zsh ]]; then
+  fancy_echo "Installing oh-my-zsh"
+  git clone git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
+else
+  fancy_echo "Oh-my-zsh already installed. Skipping..."
+fi
 
-fancy_echo "Installing oh-my-zsh Rob theme"
-ln -s $HOME/Dropbox/config/oh-my-zsh/rob.zsh-theme $HOME/.oh-my-zsh/themes/rob.zsh-theme
+# got to here
+if ! [[ -f $HOME/.oh-my-zsh/themes/rob.zsh-theme ]]; then
+  fancy_echo "Installing oh-my-zsh Rob theme"
+  ln -s $HOME/Dropbox/config/oh-my-zsh/rob.zsh-theme $HOME/.oh-my-zsh/themes/rob.zsh-theme
+else
+  fancy_echo "Oh-my-zsh Rob theme already installed. Skipping..."
+fi
 
-fancy_echo "Installing iterm2 settings"
-mkdir $HOME/.iterm2
-ln -s $HOME/Dropbox/config/iterm2/com.googlecode.iterm2.plist $HOME/.iterm2/com.googlecode.iterm2.plist
+if ! [[ -d $HOME/.iterm2 ]]; then
+  fancy_echo "Installing iterm2 settings"
+  mkdir $HOME/.iterm2
+  ln -s $HOME/Dropbox/config/iterm2/com.googlecode.iterm2.plist $HOME/.iterm2/com.googlecode.iterm2.plist
+else
+  fancy_echo "iTerm2 settings already installed. Skipping..."
+fi
 
 fancy_echo "Installing Scala"
 brew install scala
 
-fancy_echo "Installing sbt"
-brew install sbt
+if ! command -v 'sbt' >/dev/null; then
+  fancy_echo "Installing sbt"
+  brew install sbt
+else
+  fancy_echo "sbt already installed. Skipping..."
+fi
 
-fancy_echo "Installing activator"
-brew install typesafe-activator
+if ! command -v 'activator' >/dev/null; then
+  fancy_echo "Installing activator"
+  brew install typesafe-activator
+else
+  fancy_echo "activator already installed. Skipping..."
+fi
+
+
+fancy_echo "Happy days. Job done. Please check the log for any failures"
