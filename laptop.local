@@ -77,4 +77,11 @@ gvm install groovy 2.3.7
 fancy_echo "Installing grails 2.3.9"
 gvm install grails 2.3.9
 
+if ! command -v 'grunt' >/dev/null; then
+  fancy_echo "Installing grunt-cli"
+  npm install -g grunt-cli
+else
+  fancy_echo "grunt-cli already installed. Skipping..."
+fi
+
 fancy_echo "Happy days. Job done. Please check the log for any failures."
