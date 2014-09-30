@@ -71,4 +71,10 @@ else
   gvm selfupdate
 fi
 
+fancy_echo "Installing groovy 2.3.7"
+gvm install groovy 2.3.7
+
+fancy_echo "Installing grails 2.3.9"
+gvm install grails 2.3.9
+
 fancy_echo "Happy days. Job done. Please check the log for any failures."
