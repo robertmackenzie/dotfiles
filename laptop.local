@@ -61,4 +61,14 @@ fi
 fancy_echo "Starting mongodb..."
   brew_launchctl_restart mongodb
 
+if ! command -v 'gvm' >/dev/null; then
+  fancy_echo "Installing gvm"
+  curl -s get.gvmtool.net | bash
+  fancy_echo "Starting gvm"
+  [[ -s "/Users/mackenro/.gvm/bin/gvm-init.sh" ]] && source $HOME/.gvm/bin/gvm-init.sh
+else
+  fancy_echo "gvm already installed. Updating..."
+  gvm selfupdate
+fi
+
 fancy_echo "Happy days. Job done. Please check the log for any failures."
