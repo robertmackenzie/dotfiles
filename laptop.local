@@ -51,4 +51,8 @@ else
   fancy_echo "activator already installed. Skipping..."
 fi
 
+
+fancy_echo "Installing mongodb"
+brew install mongodb
+
 fancy_echo "Happy days. Job done. Please check the log for any failures"
