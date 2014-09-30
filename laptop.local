@@ -51,5 +51,4 @@ else
   fancy_echo "activator already installed. Skipping..."
 fi
 
-
 fancy_echo "Happy days. Job done. Please check the log for any failures"
