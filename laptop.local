@@ -1,11 +1,15 @@
 #!/bin/sh
 
-fancy_echo "Installing cask applications"
-  if [[ -f ~/.laptop.casks.local ]]; then
-    brew tap caskroom/cask
-    brew install brew-cask
-    source ~/.laptop.casks.local
-  fi
+if [[ -f ~/.laptop.casks.local ]] || ! command -v 'brew cask' >/dev/null; then
+  fancy_echo "Installing brew cask"
+  brew tap caskroom/cask
+  brew install brew-cask
+fi
+
+if [[ -f ~/.laptop.casks.local ]]; then
+  fancy_echo "Installing cask applications"
+  source ~/.laptop.casks.local
+fi
 
 fancy_echo "Installing oh-my-zsh"
 git clone git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
