@@ -9,3 +9,4 @@ brew cask install java
 brew cask install intellij-idea-ce
 brew cask install slack
 brew cask install password-gorilla
+brew cask install skype
