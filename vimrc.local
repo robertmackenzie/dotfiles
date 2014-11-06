@@ -2,8 +2,12 @@
 nmap <leader>h :set hls!<CR>
 
 " 4 spaces in JS
-autocmd BufRead,BufNewFile *.js set tabstop=4
-autocmd BufRead,BufNewFile *.js set shiftwidth=4
+autocmd BufRead,BufNewFile *.js setlocal tabstop=4
+autocmd BufRead,BufNewFile *.js setlocal shiftwidth=4
+
+" 2 spaces in ruby
+autocmd BufRead,BufNewFile *.rb setlocal tabstop=2
+autocmd BufRead,BufNewFile *.rb setlocal shiftwidth=2
 
 nnoremap <leader>db :set background=dark<CR>
 nnoremap <leader>lb :set background=light<CR>
