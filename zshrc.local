@@ -79,6 +79,8 @@ export PATH=".git/safe/../../bin:/Users/mackenro/.rbenv/shims:/Users/mackenro/.b
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 #
+# for grails
+export PATH=/Users/mackenro/.gvm/grails/current/bin:$PATH
 # MUST BE AT THE END OF THE FILE FOR GVM TO WORK!!!
 [[ -s "/Users/mackenro/.gvm/bin/gvm-init.sh" ]] && source "/Users/mackenro/.gvm/bin/gvm-init.sh"
 
