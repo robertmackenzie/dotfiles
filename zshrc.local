@@ -79,6 +79,10 @@ export PATH=".git/safe/../../bin:/Users/mackenro/.rbenv/shims:/Users/mackenro/.b
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 #
+
+# For conscript
+export PATH=$PATH:~/bin
+
 # for grails
 export PATH=/Users/mackenro/.gvm/grails/current/bin:$PATH
 # MUST BE AT THE END OF THE FILE FOR GVM TO WORK!!!
