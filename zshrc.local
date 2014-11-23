@@ -81,7 +81,7 @@ export PATH=".git/safe/../../bin:/Users/mackenro/.rbenv/shims:/Users/mackenro/.b
 #
 
 # For conscript
-export PATH=$PATH:~/bin
+export PATH=~/bin:$PATH
 
 # for grails
 export PATH=/Users/mackenro/.gvm/grails/current/bin:$PATH
