@@ -1,3 +1,5 @@
+[merge]
+  ff = ""
 [user]
   email = robertmackenzie@gmail.com
   name = Robert Mackenzie
