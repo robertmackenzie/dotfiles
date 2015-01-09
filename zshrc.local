@@ -83,6 +83,9 @@ export PATH=".git/safe/../../bin:/Users/mackenro/.rbenv/shims:/Users/mackenro/.b
 # For conscript
 export PATH=~/bin:$PATH
 
+# Autojump
+[[ -s $(brew --prefix)/etc/autojump.sh ]] && . $(brew --prefix)/etc/autojump.sh
+
 # for grails
 export PATH=/Users/mackenro/.gvm/grails/current/bin:$PATH
 # MUST BE AT THE END OF THE FILE FOR GVM TO WORK!!!

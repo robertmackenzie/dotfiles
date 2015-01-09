@@ -22,7 +22,6 @@ else
   fancy_echo "Oh-my-zsh already installed. Skipping..."
 fi
 
-# got to here
 if ! [[ -f $HOME/.oh-my-zsh/themes/rob.zsh-theme ]]; then
   fancy_echo "Installing oh-my-zsh Rob theme"
   ln -s $HOME/Dropbox/config/oh-my-zsh/rob.zsh-theme $HOME/.oh-my-zsh/themes/rob.zsh-theme
@@ -86,6 +85,13 @@ if ! command -v 'grunt' >/dev/null; then
   npm install -g grunt-cli
 else
   fancy_echo "grunt-cli already installed. Skipping..."
+fi
+
+if ! command -v 'autojump' >/dev/null; then
+  fancy_echo "Installing autojump"
+  brew install autojump
+else
+  fancy_echo "autojump already installed. Skipping..."
 fi
 
 fancy_echo "Happy days. Job done. Please check the log for any failures."
