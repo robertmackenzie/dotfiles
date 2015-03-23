@@ -80,6 +80,9 @@ export PATH=".git/safe/../../bin:/Users/mackenro/.rbenv/shims:/Users/mackenro/.b
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 #
 
+# For Tmuxinator
+# source ~/.bin/tmuxinator.zsh
+
 # For conscript
 export PATH=~/bin:$PATH
 
