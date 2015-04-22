@@ -3,3 +3,5 @@
 [user]
   email = robertmackenzie@gmail.com
   name = Robert Mackenzie
+[core]
+  excludesfile = ~/.gitignore.local
