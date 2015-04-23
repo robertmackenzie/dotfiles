@@ -50,3 +50,10 @@ endfunction
 "call NERDTreeHighlightFile('rb', 'DarkRed', 'none', '#ffa500', '#151515')
 "call NERDTreeHighlightFile('php', 'Magenta', 'none', '#ff00ff', '#151515')
 
+" Syntax coloring lines that are too long just slows down the world
+set synmaxcol=256
+
+" Powerline setup
+python from powerline.vim import setup as powerline_setup
+python powerline_setup()
+python del powerline_setup
