@@ -53,7 +53,18 @@ endfunction
 " Syntax coloring lines that are too long just slows down the world
 set synmaxcol=256
 
+" scala config
+if filereadable($HOME . "/.vimrc.scala.local")
+  source ~/.vimrc.scala.local
+endif
+
+" Scalastyle (hopefully faster than fsc or scalac)
+let g:syntastic_scala_checkers = ['fsc']
+let g:syntastic_scala_scalastyle_jar='/usr/local/Cellar/scalastyle/0.6.0/libexec/scalastyle_2.10-0.6.0-batch.jar'
+let g:syntastic_scala_scalastyle_config_file='/Users/mackenro/scalastyle_config.xml'
+
 " Powerline setup
 python from powerline.vim import setup as powerline_setup
 python powerline_setup()
 python del powerline_setup
+
