@@ -90,7 +90,7 @@ export PATH=~/bin:$PATH
 [[ -s $(brew --prefix)/etc/autojump.sh ]] && . $(brew --prefix)/etc/autojump.sh
 
 # for npm .bin files
-export PATH=$PATH:node_modules/.bin/
+export PATH=node_modules/.bin:$PATH
 
 # for grails
 export PATH=/Users/mackenro/.gvm/grails/current/bin:$PATH
