@@ -94,4 +94,9 @@ else
   fancy_echo "autojump already installed. Skipping..."
 fi
 
+if [[ -f ~/.laptop.gems.local ]]; then
+  fancy_echo "Installing cask applications"
+  source ~/.laptop.gems.local
+fi
+
 fancy_echo "Happy days. Job done. Please check the log for any failures."
