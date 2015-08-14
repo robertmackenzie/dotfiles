@@ -8,5 +8,6 @@ rerun.txt
 tags
 tmp/**/*
 !tmp/cache/.keep
-agignore
+.agignore
 .nvmrc
+.settings
