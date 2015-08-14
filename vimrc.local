@@ -39,25 +39,8 @@ vmap <leader><leader><C-c> :w! ~/.vimbuffer<CR>
 " write from buffer
 map <leader><leader><C-w> :r ~/.vimbuffer<CR>
 
-
 " open NERDTree
 " autocmd vimenter * NERDTree
-
-"source: https://github.com/scrooloose/nerdtree/issues/201#issuecomment-9954740
-"call NERDTreeHighlightFile('jade', 'green', 'none', 'green', '#151515')
-"call NERDTreeHighlightFile('ini', 'yellow', 'none', 'yellow', '#151515')
-"call NERDTreeHighlightFile('md', 'blue', 'none', 'blue', '#151515')
-"call NERDTreeHighlightFile('yml', 'yellow', 'none', 'yellow', '#151515')
-"call NERDTreeHighlightFile('config', 'yellow', 'none', 'yellow', '#151515')
-"call NERDTreeHighlightFile('conf', 'yellow', 'none', 'yellow', '#151515')
-"call NERDTreeHighlightFile('json', 'yellow', 'none', 'yellow', '#151515')
-"call NERDTreeHighlightFile('html', 'yellow', 'none', 'yellow', '#151515')
-"call NERDTreeHighlightFile('styl', 'cyan', 'none', 'cyan', '#151515')
-"call NERDTreeHighlightFile('css', 'cyan', 'none', 'cyan', '#151515')
-"call NERDTreeHighlightFile('coffee', 'Red', 'none', 'red', '#151515')
-"call NERDTreeHighlightFile('js', 'Red', 'none', '#ffa500', '#151515')
-"call NERDTreeHighlightFile('rb', 'DarkRed', 'none', '#ffa500', '#151515')
-"call NERDTreeHighlightFile('php', 'Magenta', 'none', '#ff00ff', '#151515')
 
 " Syntax coloring lines that are too long just slows down the world
 set synmaxcol=256
@@ -79,4 +62,3 @@ let g:syntastic_scala_scalastyle_config_file='/Users/mackenro/scalastyle_config.
 python from powerline.vim import setup as powerline_setup
 python powerline_setup()
 python del powerline_setup
-

@@ -3,10 +3,9 @@ brew cask install google-chrome
 brew cask install iterm2
 brew cask install spectacle
 brew cask install dropbox
-brew cask install onepassword
+brew cask install 1password
 brew cask install sourcetree
 brew cask install java
 brew cask install intellij-idea-ce
 brew cask install slack
-brew cask install password-gorilla
 brew cask install skype
