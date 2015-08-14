@@ -1,4 +1,4 @@
 " only run syntastic syntax checking on write for scala files
 " on open is a bit slow for my tastes
-au BufReadPre *.scala let b:syntastic_mode = 'passive'
-au BufWritePost *.scala execute ":SyntasticCheck"
+au BufReadPre *.scala,*.sbt let b:syntastic_mode = 'passive'
+au BufWritePost *.scala,*.sbt execute ":SyntasticCheck"

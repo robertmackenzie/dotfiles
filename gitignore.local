@@ -10,3 +10,4 @@ tmp/**/*
 !tmp/cache/.keep
 .agignore
 .nvmrc
+.settings

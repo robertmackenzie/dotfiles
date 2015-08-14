@@ -13,6 +13,8 @@ nnoremap <leader>db :set background=dark<CR>
 nnoremap <leader>lb :set background=light<CR>
 
 nnoremap <leader>k :NERDTreeToggle<CR>
+let NERDTreeWinSize=40
+let NERDTreeMinimalUI=1
 
 " Start interactive EasyAlign in visual mode (e.g. vip<Enter>)
 vmap <Enter> <Plug>(EasyAlign)
@@ -30,6 +32,13 @@ function! NERDTreeHighlightFile(extension, fg, bg, guifg, guibg)
  exec 'autocmd filetype nerdtree syn match ' . a:extension .' #^\s\+.*'. a:extension .'$#'
  exec 'autocmd filetype nerdtree highlight ' . a:extension .' ctermbg='. a:bg .' ctermfg='. a:fg .' guibg='. a:guibg .' guifg='. a:guifg
 endfunction
+
+" copy to buffer
+vmap <leader><leader><C-c> :w! ~/.vimbuffer<CR>
+" nmap <C-c> :.w! ~/.vimbuffer<CR>
+" write from buffer
+map <leader><leader><C-w> :r ~/.vimbuffer<CR>
+
 
 " open NERDTree
 " autocmd vimenter * NERDTree
@@ -58,8 +67,11 @@ if filereadable($HOME . "/.vimrc.scala.local")
   source ~/.vimrc.scala.local
 endif
 
-" Scalastyle (hopefully faster than fsc or scalac)
-let g:syntastic_scala_checkers = ['fsc']
+" run all the checkers
+let g:syntastic_aggregate_errors = 1
+
+" Scalastyle
+let g:syntastic_scala_checkers = ['fsc', 'scalastyle']
 let g:syntastic_scala_scalastyle_jar='/usr/local/Cellar/scalastyle/0.6.0/libexec/scalastyle_2.10-0.6.0-batch.jar'
 let g:syntastic_scala_scalastyle_config_file='/Users/mackenro/scalastyle_config.xml'
 
