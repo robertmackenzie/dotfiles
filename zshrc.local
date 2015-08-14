@@ -105,3 +105,6 @@ source $(brew --prefix nvm)/nvm.sh
 
 #THIS MUST BE AT THE END OF THE FILE FOR GVM TO WORK!!!
 [[ -s "/Users/mackenro/.gvm/bin/gvm-init.sh" ]] && source "/Users/mackenro/.gvm/bin/gvm-init.sh"
+
+export PATH="$HOME/.bin:$PATH"
+eval "$(rbenv init - --no-rehash zsh)"
