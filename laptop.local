@@ -29,6 +29,14 @@ else
   fancy_echo "Oh-my-zsh Rob theme already installed. Skipping..."
 fi
 
+if ! [[ -f "$HOME/Library/fonts/auce Code Powerline Black.otf" ]]; then
+  fancy_echo "Installing powerline fonts"
+  git clone git@github.com:powerline/fonts.git /tmp/powerline-fonts
+  /tmp/powerline-fonts/install.sh
+else
+  fancy_echo "powerline fonts already installed. Skipping..."
+fi
+
 if ! [[ -d $HOME/.iterm2 ]]; then
   fancy_echo "Installing iterm2 settings"
   mkdir $HOME/.iterm2
@@ -85,6 +93,13 @@ fi
 if [[ -f ~/.laptop.gems.local ]]; then
   fancy_echo "Installing cask applications"
   source ~/.laptop.gems.local
+fi
+
+if ! command -v 'powerline' >/dev/null; then
+  fancy_echo "Installing powerline"
+  pip install powerline-status
+else
+  fancy_echo "powerline already installed. Skipping..."
 fi
 
 fancy_echo "Happy days. Job done. Please check the log for any failures."

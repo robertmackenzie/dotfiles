@@ -59,6 +59,6 @@ let g:syntastic_scala_scalastyle_jar='/usr/local/Cellar/scalastyle/0.6.0/libexec
 let g:syntastic_scala_scalastyle_config_file='/Users/mackenro/scalastyle_config.xml'
 
 " Powerline setup
-" python from powerline.vim import setup as powerline_setup
-" python powerline_setup()
-" python del powerline_setup
+python from powerline.vim import setup as powerline_setup
+python powerline_setup()
+python del powerline_setup
