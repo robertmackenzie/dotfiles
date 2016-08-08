@@ -6,6 +6,6 @@ brew cask install dropbox
 brew cask install 1password
 brew cask install sourcetree
 brew cask install java
-brew cask install intellij-idea-ce
+brew cask install intellij-idea
 brew cask install slack
 brew cask install skype
