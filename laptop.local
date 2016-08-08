@@ -61,25 +61,6 @@ else
   fancy_echo "mogodb already installed. Skipping..."
 fi
 
-fancy_echo "Starting mongodb..."
-  brew_launchctl_restart mongodb
-
-if ! command -v 'gvm' >/dev/null; then
-  fancy_echo "Installing gvm"
-  curl -s get.gvmtool.net | bash
-  fancy_echo "Starting gvm"
-  [[ -s "/Users/mackenro/.gvm/bin/gvm-init.sh" ]] && source $HOME/.gvm/bin/gvm-init.sh
-else
-  fancy_echo "gvm already installed. Updating..."
-  gvm selfupdate
-fi
-
-fancy_echo "Installing groovy 2.3.7"
-gvm install groovy 2.3.7
-
-fancy_echo "Installing grails 2.3.9"
-gvm install grails 2.3.9
-
 if ! command -v 'grunt' >/dev/null; then
   fancy_echo "Installing grunt-cli"
   npm install -g grunt-cli
