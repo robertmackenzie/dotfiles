@@ -24,6 +24,7 @@ nmap <Leader>a <Plug>(EasyAlign)
 
 map <c-f> :call JsBeautify()<cr>
 
+set t_Co=256
 set background=dark
 colorscheme solarized
 
