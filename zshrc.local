@@ -84,6 +84,8 @@ alias rmr="rm -r"
 # For Tmuxinator
 # source ~/.bin/tmuxinator.zsh
 
+alias tmux="TERM=xterm-256color tmux -2"
+
 # For conscript
 export PATH=~/bin:$PATH
 
