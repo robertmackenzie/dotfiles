@@ -79,6 +79,7 @@ export PATH=".git/safe/../../bin:/Users/mackenro/.rbenv/shims:/Users/mackenro/.b
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 #
+alias rmr="rm -r"
 
 # For Tmuxinator
 # source ~/.bin/tmuxinator.zsh
