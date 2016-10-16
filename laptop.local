@@ -7,7 +7,6 @@ git config --global user.email robertmackenzie@gmail.com
 if [[ -f ~/.laptop.casks.local ]] || ! command -v 'brew cask' >/dev/null; then
   fancy_echo "Installing brew cask"
   brew tap caskroom/cask
-  brew install brew-cask
 fi
 
 if [[ -f ~/.laptop.casks.local ]]; then
