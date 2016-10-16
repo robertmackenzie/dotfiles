@@ -113,3 +113,4 @@ source /Library/Python/2.7/site-packages/powerline/bindings/zsh/powerline.zsh
 
 export PATH="$HOME/.bin:$PATH"
 eval "$(rbenv init - --no-rehash zsh)"
+eval "$(rbenv init - --no-rehash)"
