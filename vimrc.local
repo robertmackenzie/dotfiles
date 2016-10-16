@@ -54,6 +54,10 @@ endif
 " run all the checkers
 let g:syntastic_aggregate_errors = 1
 
+" populate location list
+let g:syntastic_always_populate_loc_list = 1
+"let g:syntastic_auto_loc_list = 1
+
 " Scalastyle
 let g:syntastic_scala_checkers = ['fsc', 'scalastyle']
 let g:syntastic_scala_scalastyle_jar='/usr/local/Cellar/scalastyle/0.6.0/libexec/scalastyle_2.10-0.6.0-batch.jar'

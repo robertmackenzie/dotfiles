@@ -11,3 +11,5 @@ tmp/**/*
 .agignore
 .nvmrc
 .settings
+.ensime
+.ensime_cache
