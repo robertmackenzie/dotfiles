@@ -30,7 +30,7 @@ fi
 
 if ! [[ -f "$HOME/Library/fonts/auce Code Powerline Black.otf" ]]; then
   fancy_echo "Installing powerline fonts"
-  git clone git@github.com:powerline/fonts.git /tmp/powerline-fonts
+  git clone https://github.com/powerline/fonts.git /tmp/powerline-fonts
   /tmp/powerline-fonts/install.sh
 else
   fancy_echo "powerline fonts already installed. Skipping..."
