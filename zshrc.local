@@ -106,7 +106,10 @@ export PATH="/usr/local/heroku/bin:$PATH"
 # run nvm
 source $(brew --prefix nvm)/nvm.sh
 
-source /Library/Python/2.7/site-packages/powerline/bindings/zsh/powerline.zsh
+# linux
+# source /Library/Python/2.7/site-packages/powerline/bindings/zsh/powerline.zsh
+# mac
+source /usr/local/lib/python2.7/site-packages/powerline/bindings/zsh/powerline.zsh
 
 #THIS MUST BE AT THE END OF THE FILE FOR GVM TO WORK!!!
 [[ -s "/Users/mackenro/.gvm/bin/gvm-init.sh" ]] && source "/Users/mackenro/.gvm/bin/gvm-init.sh"
