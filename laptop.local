@@ -96,7 +96,7 @@ fi
 
 if ! command -v 'powerline' >/dev/null; then
   fancy_echo "Installing powerline"
-  pip install powerline-status
+  pip2 install powerline-status
 else
   fancy_echo "powerline already installed. Skipping..."
 fi
