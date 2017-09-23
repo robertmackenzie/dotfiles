@@ -104,4 +104,10 @@ fi
 fancy_echo "Enabling firewall"
 sudo /usr/libexec/ApplicationFirewall/socketfilterfw --setglobalstate on
 
+fancy_echo "Setting interface to Dark theme"
+defaults write NSGlobalDomain AppleInterfaceStyle Dark
+killall Dock
+killall SystemUIServer
+killall Finder
+
 fancy_echo "Happy days. Job done. Please check the log for any failures."
