@@ -109,3 +109,4 @@ source /usr/local/lib/python2.7/site-packages/powerline/bindings/zsh/powerline.z
 [[ -s "/Users/mackenro/.gvm/bin/gvm-init.sh" ]] && source "/Users/mackenro/.gvm/bin/gvm-init.sh"
 
 export PATH="$HOME/.bin:$PATH"
+source /Users/mackenro/.asdf/asdf.sh
