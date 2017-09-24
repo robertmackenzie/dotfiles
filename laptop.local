@@ -65,6 +65,19 @@ else
   fancy_echo "powerline already installed. Skipping..."
 fi
 
+fancy_echo "Installing SBT"
+if ! command -v 'sbt' >/dev/null; then
+  fancy_echo "Installing sbt"
+  brew install sbt
+else
+  fancy_echo "sbt already installed. Skipping..."
+fi
+
+#prep for switch to ASDF
+#install_asdf_plugin "sbt" "https://github.com/robertmackenzie/asdf-sbt"
+#asdf install "sbt" "0.13.15"
+#asdf global "sbt" "0.13.15"
+
 fancy_echo "Enabling firewall"
 sudo /usr/libexec/ApplicationFirewall/socketfilterfw --setglobalstate on
 
