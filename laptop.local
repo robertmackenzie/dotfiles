@@ -28,7 +28,7 @@ else
   fancy_echo "Oh-my-zsh Rob theme already installed. Skipping..."
 fi
 
-if ! [[ -f "$HOME/Library/fonts/auce Code Powerline Black.otf" ]]; then
+if ! [[ -f "$HOME/Library/fonts/Source Code Pro Black for Powerline.otf" ]]; then
   fancy_echo "Installing powerline fonts"
   git clone https://github.com/powerline/fonts.git /tmp/powerline-fonts
   /tmp/powerline-fonts/install.sh
