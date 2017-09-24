@@ -44,23 +44,6 @@ else
   fancy_echo "iTerm2 settings already installed. Skipping..."
 fi
 
-fancy_echo "Installing Scala"
-brew install scala
-
-if ! command -v 'sbt' >/dev/null; then
-  fancy_echo "Installing sbt"
-  brew install sbt
-else
-  fancy_echo "sbt already installed. Skipping..."
-fi
-
-if ! command -v 'activator' >/dev/null; then
-  fancy_echo "Installing activator"
-  brew install typesafe-activator
-else
-  fancy_echo "activator already installed. Skipping..."
-fi
-
 if ! command -v 'mongod' >/dev/null; then
   fancy_echo "Installing mongodb"
   brew install mongodb
