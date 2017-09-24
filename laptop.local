@@ -89,11 +89,6 @@ else
   fancy_echo "autojump already installed. Skipping..."
 fi
 
-if [[ -f ~/.laptop.gems.local ]]; then
-  fancy_echo "Installing cask applications"
-  source ~/.laptop.gems.local
-fi
-
 if ! command -v 'powerline' >/dev/null; then
   fancy_echo "Installing powerline"
   pip2 install powerline-status

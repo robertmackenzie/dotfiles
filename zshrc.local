@@ -81,9 +81,6 @@ export PATH=".git/safe/../../bin:/Users/mackenro/.rbenv/shims:/Users/mackenro/.b
 #
 alias rmr="rm -r"
 
-# For Tmuxinator
-# source ~/.bin/tmuxinator.zsh
-
 alias tmux="TERM=xterm-256color tmux -2"
 
 # For conscript
