@@ -100,9 +100,6 @@ export PATH=/Users/mackenro/.gvm/grails/current/bin:$PATH
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
 
-# run nvm
-source $(brew --prefix nvm)/nvm.sh
-
 # linux
 # source /Library/Python/2.7/site-packages/powerline/bindings/zsh/powerline.zsh
 # mac

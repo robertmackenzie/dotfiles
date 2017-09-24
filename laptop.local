@@ -51,13 +51,6 @@ else
   fancy_echo "mogodb already installed. Skipping..."
 fi
 
-if ! command -v 'nvm' >/dev/null; then
-  fancy_echo "Installing nvm"
-  brew install nvm
-else
-  fancy_echo "nvm already installed. Skipping..."
-fi
-
 if ! command -v 'grunt' >/dev/null; then
   fancy_echo "Installing grunt-cli"
   npm install -g grunt-cli
