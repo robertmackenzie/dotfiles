@@ -51,7 +51,7 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
-export PATH=".git/safe/../../bin:/Users/mackenro/.rbenv/shims:/Users/mackenro/.bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"
+export PATH=".git/safe/../../bin:/Users/mackenro/.bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
@@ -112,5 +112,3 @@ source /usr/local/lib/python2.7/site-packages/powerline/bindings/zsh/powerline.z
 [[ -s "/Users/mackenro/.gvm/bin/gvm-init.sh" ]] && source "/Users/mackenro/.gvm/bin/gvm-init.sh"
 
 export PATH="$HOME/.bin:$PATH"
-eval "$(rbenv init - --no-rehash zsh)"
-eval "$(rbenv init - --no-rehash)"
