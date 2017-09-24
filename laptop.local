@@ -51,13 +51,6 @@ else
   fancy_echo "mogodb already installed. Skipping..."
 fi
 
-if ! command -v 'grunt' >/dev/null; then
-  fancy_echo "Installing grunt-cli"
-  npm install -g grunt-cli
-else
-  fancy_echo "grunt-cli already installed. Skipping..."
-fi
-
 if ! command -v 'autojump' >/dev/null; then
   fancy_echo "Installing autojump"
   brew install autojump
