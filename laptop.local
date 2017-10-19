@@ -65,6 +65,9 @@ else
   fancy_echo "powerline already installed. Skipping..."
 fi
 
+fancy_echo "Installing Ensime dependencies"
+pip2 install sexpdata websocket-client
+
 fancy_echo "Installing SBT"
 if ! command -v 'sbt' >/dev/null; then
   fancy_echo "Installing sbt"
