@@ -34,6 +34,8 @@ function! NERDTreeHighlightFile(extension, fg, bg, guifg, guibg)
  exec 'autocmd filetype nerdtree highlight ' . a:extension .' ctermbg='. a:bg .' ctermfg='. a:fg .' guibg='. a:guibg .' guifg='. a:guifg
 endfunction
 
+autocmd BufRead,BufNewFile *.avsc set filetype=json
+
 " copy to buffer
 vmap <leader><leader><C-c> :w! ~/.vimbuffer<CR>
 " nmap <C-c> :.w! ~/.vimbuffer<CR>
@@ -41,7 +43,7 @@ vmap <leader><leader><C-c> :w! ~/.vimbuffer<CR>
 map <leader><leader><C-w> :r ~/.vimbuffer<CR>
 
 " open NERDTree
-" autocmd vimenter * NERDTree
+autocmd vimenter * NERDTree
 
 " Syntax coloring lines that are too long just slows down the world
 set synmaxcol=256
