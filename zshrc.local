@@ -1,4 +1,4 @@
-# Path to your oh-my-zsh installation.
+#I Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
 
 # Set name of the theme to load.
@@ -47,12 +47,23 @@ DISABLE_AUTO_TITLE="true"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git)
 
-source $ZSH/oh-my-zsh.sh
-
 # User configuration
 
-export PATH=".git/safe/../../bin:/Users/mackenro/.bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"
+export PATH=".git/safe/../../bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:$PATH"
+# for npm .bin files
+export PATH=./node_modules/.bin:$PATH
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
+export PATH="$HOME/.bin:$PATH"
+export PATH="$HOME/.rbenv/bin:$PATH"
 # export MANPATH="/usr/local/man:$MANPATH"
+
+source $ZSH/oh-my-zsh.sh
+# linux
+source /Library/Python/2.7/site-packages/powerline/bindings/zsh/powerline.zsh
+# mac
+source /usr/local/lib/python2.7/site-packages/powerline/bindings/zsh/powerline.zsh
+source $HOME/.asdf/asdf.sh
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
@@ -79,26 +90,9 @@ export PATH=".git/safe/../../bin:/Users/mackenro/.bin:/usr/local/bin:/usr/bin:/b
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 #
-alias rmr="rm -r"
 
+alias be="bundle exec"
 alias tmux="TERM=xterm-256color tmux -2"
 
-# For conscript
-export PATH=~/bin:$PATH
-
 # Autojump
-[[ -s $(brew --prefix)/etc/autojump.sh ]] && . $(brew --prefix)/etc/autojump.sh
-
-# for npm .bin files
-export PATH=node_modules/.bin:$PATH
-
-### Added by the Heroku Toolbelt
-export PATH="/usr/local/heroku/bin:$PATH"
-
-# linux
-# source /Library/Python/2.7/site-packages/powerline/bindings/zsh/powerline.zsh
-# mac
-source /usr/local/lib/python2.7/site-packages/powerline/bindings/zsh/powerline.zsh
-
-export PATH="$HOME/.bin:$PATH"
-source /Users/mackenro/.asdf/asdf.sh
+#[[ -s $(brew --prefix)/etc/autojump.sh ]] && . $(brew --prefix)/etc/autojump.sh
