@@ -55,15 +55,14 @@ export PATH=./node_modules/.bin:$PATH
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
 export PATH="$HOME/.bin:$PATH"
+export PATH="$HOME/.local/bin:$PATH"
 export PATH="$HOME/.rbenv/bin:$PATH"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
-# linux
-source /Library/Python/2.7/site-packages/powerline/bindings/zsh/powerline.zsh
+source $HOME/.local/lib/python2.7/site-packages/powerline/bindings/zsh/powerline.zsh
 # mac
-source /usr/local/lib/python2.7/site-packages/powerline/bindings/zsh/powerline.zsh
-source $HOME/.asdf/asdf.sh
+#source $HOME/.asdf/asdf.sh
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
